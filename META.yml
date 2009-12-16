@@ -1,0 +1,13 @@
+--- #YAML:1.0
+name:                Array-OrdHash
+version:             0.1
+abstract:            An associative array class with both array-, hash-like and OO interface.
+license:             ~
+author:              
+    - Vladimir Surin <brexs@yandex.ru>
+generated_by:        ExtUtils::MakeMaker version 6.4401
+distribution_type:   module
+requires:     
+meta-spec:
+    url:     http://module-build.sourceforge.net/META-spec-v1.3.html
+    version: 1.3
