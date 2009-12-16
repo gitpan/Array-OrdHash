@@ -1,6 +1,5 @@
 Revision history for Perl extension Array::OrdHash.
 
 0.01  Sat Dec 12 15:57:21 2009
-	- original version; created by h2xs 1.23 with options
-		-X -n Array::OrdHash -v 0.01
+        - First version, released on an unsuspecting world.
 

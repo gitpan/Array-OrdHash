@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                Array-OrdHash
-version:             0.1
+version:             0.01
 abstract:            An associative array class with both array-, hash-like and OO interface.
 license:             ~
 author:              

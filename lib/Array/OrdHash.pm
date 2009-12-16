@@ -1,6 +1,6 @@
 #Array::OrdHash =======================
 package Array::OrdHash;
-our $VERSION = '0.1';
+our $VERSION = '0.01';
 
 use Carp qw/croak/;
 use strict;
@@ -592,7 +592,7 @@ IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY C
 
 =head1 VERSION
 
-Version 0.1
+Version 0.01
 
 =head1 SEE ALSO
 
