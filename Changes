@@ -1,5 +1,8 @@
 Revision history for Perl extension Array::OrdHash.
 
-0.01  Sat Dec 12 15:57:21 2009
+0.02  	2009-12-16
+        - More accurate documentation supplied.
+
+0.01  	2009-12-12
         - First version, released on an unsuspecting world.
 

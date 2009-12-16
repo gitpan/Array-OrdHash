@@ -1,6 +1,6 @@
 #Array::OrdHash =======================
 package Array::OrdHash;
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use Carp qw/croak/;
 use strict;
@@ -398,7 +398,7 @@ Array::OrdHash - An associative array class with both array-, hash-like and OO i
 
 =head1 DESCRIPTION
 
-This module implements Perl arrays that have both numeric and string indices, similar to PHP arrays or Collections, therefore the array keys are unique string.
+This module implements Perl arrays that have both numeric and string indices, similar to PHP arrays or Collections, therefore the array keys are unique strings.
 
 The order in which the elements were added is preserved just like B<L<Tie::IxHash|Tie::IxHash>> does this.
 
@@ -418,7 +418,7 @@ The new() constructor method instantiates a new B<Array::OrdHash> object.
 
 =head2 Hash Interface
 
-A value of an B<Array::OrdHash> object element can be set/read in a hash-like manner:
+A value of an B<Array::OrdHash> object element can be set/read in a hash-like manner. When an element under the specified key does not exist then it is newly created:
 
  $oh->{'a'} = 'First';        $value = $oh->{'a'};
  $oh->{'b'} = 0.18;           $value = $oh->{'b'};
@@ -442,7 +442,7 @@ Deletes the B<Array::OrdHash> object array element under the specified key. The 
 
 =head2 Array Interface
 
-A value of an B<Array::OrdHash> object element can be set/read in an array-like manner:
+A value of an already existing B<Array::OrdHash> object element can be set/read in an array-like manner:
 
  $oh->[0] = 'First';        $value = $oh->[0];
  $oh->[1] = 0.18;           $value = $oh->[1];
@@ -452,7 +452,7 @@ A value of an B<Array::OrdHash> object element can be set/read in an array-like 
   print $val, "\n";
  }
 
-An element with the specified index must already exist. It can previously be set through the Hash interface or with B<push> or B<unshift> functions. An attempt to modify an element under unexisting index is croaked. But negative indexes are acceptable within the limits of standard Perl arrays.
+An element with the specified index must already exist. It can previously be set through the B<L<Hash interface>> or with B<push>, B<unshift> or B<splice> functions. An attempt to modify an element under unexisting index is croaked. However, negative indexes are acceptable within the limits of standard Perl arrays.
 
 =head4 B<L<push|perlfunc/"push">, L<unshift|perlfunc/"unshift">>
 
@@ -538,7 +538,7 @@ When the cycle ends prematurely, then it is necessary to call B<L</Reset>> metho
 
  $oh->Reorder(LIST);
 
-Reorders the items in the B<Array::OrdHash> object array according to the specified LIST of keys. All items of the B<Array::OrdHash> object array whose keys are not present in the LIST are deleted. Elements of the LIST, which are not present in the initial B<Array::OrdHash> object array, are ignored.
+Reorders the items in the B<Array::OrdHash> object array according to the specified LIST of keys. All items of the B<Array::OrdHash> object array whose keys are not present in the LIST are deleted. Elements of the LIST, which are not present in the initial B<Array::OrdHash> object array as keys, are ignored.
 
 =head2 Reset
 
@@ -554,7 +554,7 @@ Sorts the B<Array::OrdHash> object array.
 
 Parameters:
 
-B<I<src>> (optional) - by what must the array be sorted. Can be 'B<keys>' (default) or 'B<values>'. Sorting is case sensitive. If 'B< DESC>' is additionally given then the sorting order is descending.
+B<I<src>> (optional) - by what must the array be sorted. Can be 'B<keys>' (default) or 'B<values>'. Sorting is case sensitive. If 'B< DESC>' is additionally given then the sorting order is descending, otherwise the order is ascending.
 
 B<I<proc>> (optional) - a reference to an external sort procedure. When supplied then the presence of ' DESC' is ignored.
 
@@ -592,7 +592,7 @@ IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY C
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =head1 SEE ALSO
 
