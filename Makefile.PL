@@ -4,6 +4,7 @@ use ExtUtils::MakeMaker;
 WriteMakefile(
     NAME              => 'Array::OrdHash',
     VERSION_FROM      => 'lib/Array/OrdHash.pm', # finds $VERSION
+	 LICENSE				 => 'perl',
     PREREQ_PM         => {},
 	 INSTALLDIRS 	=> 'site',
     ($] >= 5.005 ?     ## Add these new keywords supported since 5.005

@@ -1,8 +1,8 @@
 --- #YAML:1.0
 name:                Array-OrdHash
-version:             0.02
+version:             0.03
 abstract:            An associative array class with both array-, hash-like and OO interface.
-license:             ~
+license:             perl
 author:              
     - Vladimir Surin <brexs@yandex.ru>
 generated_by:        ExtUtils::MakeMaker version 6.4401
