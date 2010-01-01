@@ -1,6 +1,7 @@
 #Array::OrdHash =======================
+
 package Array::OrdHash;
-our $VERSION = '1.01';
+our $VERSION = '1.02';
 
 use Carp qw/croak/;
 use strict;
@@ -328,7 +329,7 @@ __END__
 
 =head1 NAME
 
-Array::OrdHash - An associative array class with both array-, hash-like and OO interface.
+Array::OrdHash - ordered associative array with array-like, hash-like and OO interface.
 
 =head1 SYNOPSIS
 
@@ -588,7 +589,7 @@ This module is free software; you can redistribute it and/or modify it under the
 
 =head1 VERSION
 
-Version 1.01
+Version 1.02
 
 =head1 SEE ALSO
 
