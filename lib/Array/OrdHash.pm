@@ -1,6 +1,6 @@
 #Array::OrdHash =======================
 package Array::OrdHash;
-our $VERSION = '0.03';
+our $VERSION = '1.01';
 
 use Carp qw/croak/;
 use strict;
@@ -588,7 +588,7 @@ This module is free software; you can redistribute it and/or modify it under the
 
 =head1 VERSION
 
-Version 0.03
+Version 1.01
 
 =head1 SEE ALSO
 
