@@ -1,7 +1,7 @@
 --- #YAML:1.0
 name:               Array-OrdHash
-version:            1.02
-abstract:           ordered associative array with array-like, hash-like and OO interface.
+version:            1.03
+abstract:           ordered associative array with array-like, hash-like and Object-oriented interface.
 author:
     - Vladimir Surin <brexs@yandex.ru>
 license:            perl

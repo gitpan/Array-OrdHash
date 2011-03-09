@@ -1,7 +1,7 @@
 #Array::OrdHash =======================
 
 package Array::OrdHash;
-our $VERSION = '1.02';
+our $VERSION = '1.03';
 
 use Carp qw/croak/;
 use strict;
@@ -355,6 +355,8 @@ Array::OrdHash - ordered associative array with array-like, hash-like and OO int
  @LIST = ('d'=>'Forth', 'e'=>'Fifth', 'f'=>'Sixth');
  push @$oh, @LIST;
  
+
+
  unshift @$oh, ('i'=>'I', 'j'=>'J', 'k'=>'K');
  
  # iterating as a hash
@@ -589,7 +591,7 @@ This module is free software; you can redistribute it and/or modify it under the
 
 =head1 VERSION
 
-Version 1.02
+Version 1.03
 
 =head1 SEE ALSO
 
